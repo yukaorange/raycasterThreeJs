@@ -1,0 +1,10 @@
+<% 
+let page = 'home' //ページ名
+;%>
+<%- include('./_template-part/_head',{page:page});%>
+<%- include('./_template-part/_header',{page:page});%>
+<main class="main">
+  <canvas class="webgl common-bg bg"></canvas>
+  <%- include('./_home/_home-dummy',{ page : page }) ;%>
+</main>
+<%- include('./_template-part/_footer',{page:page}) ;%>
